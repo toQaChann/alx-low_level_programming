@@ -10,14 +10,11 @@
 
 int main(void)
 {
-	char num;
 	int i;
 
-	num = '0';
-	for (i = 0; i < 10; i++)
+	for (i = '0'; i < 10; i++)
 	{
-		putchar(num);
-		num = (int)num + 1;
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
