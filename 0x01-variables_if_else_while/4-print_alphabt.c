@@ -5,7 +5,7 @@
  *
  * Description: code to print alhps
  *
- * Return; alwasy have value of 0
+ * Return: alwasy have value of 0
 */
 
 int main(void)
