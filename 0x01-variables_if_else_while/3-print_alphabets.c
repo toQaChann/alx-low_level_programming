@@ -18,12 +18,12 @@ int main(void)
 	while (alpL <= 122)
 	{
 		putchar(alpL);
-		alpL = alpL  1;
+		alpL = alpL + 1;
 	}
 	while (alpU <= 90)
 	{
 		putchar(alpU);
-		alpU = alpU  1;
+		alpU = alpU + 1;
 	}
 	putchar('\n');
 	return (0);
