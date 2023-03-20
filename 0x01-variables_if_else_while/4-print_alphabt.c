@@ -12,14 +12,19 @@ int main(void)
 {
 	char alp;
 
-	alp = 'a';
-	while (alp <= 'z')
+	alp = 97;
+	while (alp <= 122)
 	{
-		if (alp != 'e' || alp != 'q')
+		if (alp == 101 || alp == 113)
+		{
+			alp++;
+			continue;
+		}
+		else
 		{
 			putchar(alp);
+			alp++;
 		}
-	alp = alp + 1;
 	}
 	putchar('\n');
 	return (0);
