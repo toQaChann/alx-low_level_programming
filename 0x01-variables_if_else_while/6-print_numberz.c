@@ -10,13 +10,14 @@
 
 int main(void)
 {
-	int num;
+	char num;
 
-	num = 0;
-	for (num; num < 10; num++)
+	num = '0';
+	for (int i = 0; i < 10; i++)
 	{
-		printf("%d", num);
+		putchar(num);
+		num = (int)num + 1;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
