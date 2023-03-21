@@ -1,22 +1,21 @@
 #include "main.h"
 
 /**
- * main - entry point and usin' header files
+ *main - entry point and usin' header files
  *
- * Descriptions: test functions
+ *Descriptions: test functions
  *
- * Return: will return 0
+ *Return: will return 0
 */
 
 int main(void)
 {
+	char pch[] = "_putchar\n";
 	int j;
-	char st[] = "_putchar";
 
-	for (j = 0; st[j] != '\0'; j++)
+	for (j = 0; pch[j] != '\0'; j++)
 	{
-		_putchar(st[j]);
+		 _putchar(pch[j]);
 	}
-	_putchar('\n');
 	return (0);
 }
