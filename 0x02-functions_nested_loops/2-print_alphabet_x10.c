@@ -8,11 +8,20 @@
 
 void print_alphabet_x10(void)
 {
+	int j;
+	char alp;
 	int i;
 
-	for (i = 1; i <= 10; i++)
+	for (j = 1; j <= 10; j++)
 	{
-		print_alphabet();
+		i = 1;
+		alp = 97;
+		while (i <= 26)
+		{
+			_putchar(alp);
+			i = i + 1;
+			alp = alp + 1;
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
