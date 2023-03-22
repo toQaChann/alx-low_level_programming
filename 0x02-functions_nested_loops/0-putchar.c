@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  *main - entry point and usin' header files
@@ -10,12 +10,6 @@
 
 int main(void)
 {
-	char pch[] = "_putchar\n";
-	int j;
-
-	for (j = 0; pch[j] != '\0'; j++)
-	{
-		 _putchar(pch[j]);
-	}
+	printf("_putchar\n");
 	return (0);
 }
