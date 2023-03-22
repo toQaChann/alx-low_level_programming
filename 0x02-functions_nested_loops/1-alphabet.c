@@ -1,15 +1,23 @@
 #include "main.h"
 
 /**
- *main - entry point and usin' header files
+ *print_alphabet - function to print alph
  *
- *Descriptions: test functions
- *
- *Return: will return 0
+ *Return: will return nothinq (void)
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char alp;
+	int i;
+
+	i = 1;
+	alp = 97;
+	while (i <= 26)
+	{
+		_putchar(alp);
+		i = i + 1;
+		alp = alp + 1;
+	}
+	_putchar('\n');
 }
