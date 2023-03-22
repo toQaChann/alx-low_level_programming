@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- *main - entry point and usin' header files
+ *print_to_98 - check case
+ *@n: the start number
  *
- *Descriptions: test functions
- *
- *Return: will return no thing
+ *Return: will return noting
 */
 
 void print_to_98(int n)
@@ -29,16 +28,16 @@ void print_to_98(int n)
 	else if (n < 98)
 	{
 		for (i = n; i <= 98; i++)
-                {
-                        if (i != 98)
-                        {
-                                printf("%d, ", i);
-                        }
-                        else
-                        {
-                                printf("%d", i);
-                        }
-                }
+		{
+			if (i != 98)
+			{
+				printf("%d, ", i);
+			}
+			else
+			{
+				printf("%d", i);
+			}
+		}
 	}
 	else
 	{
