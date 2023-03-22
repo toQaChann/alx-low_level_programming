@@ -1,54 +1,43 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- *print_to_98 - check case
- *@n: the start number
+ *main - entry point and usin' header files
  *
- *Return: will return noting
+ *Descriptions: test functions
+ *
+ *Return: will return no thing
 */
 
 void print_to_98(int n)
 {
-	int i, j, p, q, z;
+	int i;
 
 	if (n > 98)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			j = i % 10;
-			p = i / 10;
-			q = p % 10;
-			if (p <= 9)
+			if (i != 98)
 			{
-				_putchar(q + '0');
-				_putchar(j + '0');
+				printf("%d, ", i);
 			}
 			else
 			{
-				z = p / 10;
-				_putchar(z + '0');
-				_putchar(q + '0');
-				_putchar(j + '0');
-			}
-			if (i != n)
-			{
-				_putchar(',');
+				printf("%d", i);
 			}
 		}
 	}
-	else if (n < 98)
+	else
 	{
 		for (i = n; i <= 98; i++)
-		{
-			j = i % 10;
-			p = i / 10;
-			_putchar(p + '0');
-			_putchar(j + '0');
-			if (i != n)
-			{
-				_putchar(',');
-			}
-		}
+                {
+                        if (i != 98)
+                        {
+                                printf("%d, ", i);
+                        }
+                        else
+                        {
+                                printf("%d", i);
+                        }
+                }
 	}
-	_putchar('\n');
 }
