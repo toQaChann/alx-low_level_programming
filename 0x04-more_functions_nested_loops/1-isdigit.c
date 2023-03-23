@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_isupper - check case
+ *_isdigit - check case
  *@c: the start number
  *
  *Return: will return 0 or 1
