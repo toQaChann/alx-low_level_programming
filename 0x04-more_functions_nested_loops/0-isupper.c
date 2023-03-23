@@ -2,7 +2,7 @@
 
 /**
  *_isupper - check case
- *@c: the start number 
+ *@c: the start number
  *
  *Return: will return 0 or 1
 */
@@ -13,7 +13,7 @@ int _isupper(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
