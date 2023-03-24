@@ -16,6 +16,10 @@ void print_triangle(int size)
 	{
 		for (j = 1; j <= size; j++)
 		{
+			if (size <= 0)
+			{
+				break;
+			}
 			if (j < p)
 			{
 				_putchar(' ');
