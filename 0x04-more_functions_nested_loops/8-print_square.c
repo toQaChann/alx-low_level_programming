@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- *print_diagonal - check case
- *@n: len of line
+ *print_square - check case
+ *@size: len of line
+ *
  *Return: will return nothing
 */
 
-void print_diagonal(int n)
+void print_square(int size)
 {
 	int i, j;
 	
@@ -20,7 +21,7 @@ void print_diagonal(int n)
 		{
 			_putchar('#');
 		}
-		if (i != n)
+		if (i != size)
 		{
 			_putchar('\n');
 		}
