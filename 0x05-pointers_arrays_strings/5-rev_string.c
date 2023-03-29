@@ -17,6 +17,7 @@ void rev_string(char *s)
 	{
 		c++;
 	}
+	const c;
 	char arr[c];
 	for (i = c; i >= 0; i--)
 	{
