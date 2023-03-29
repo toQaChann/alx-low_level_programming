@@ -14,8 +14,11 @@ void puts2(char *str)
 	c = 0;
 	while (str[c] != '\n')
 	{
-		_putchar(str[c]);
-		c += 2;
+		if (c % 2 == 0)
+		{
+			_putchar(str[c]);
+		}
+		c++;
 	}
 	_putchar('\n');
 }

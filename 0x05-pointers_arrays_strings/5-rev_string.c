@@ -10,6 +10,7 @@
 void rev_string(char *s)
 {
 	int c, i, j;
+	char *str;
 
 	c = 0;
 	j = 0;
@@ -17,14 +18,13 @@ void rev_string(char *s)
 	{
 		c++;
 	}
-	const int a = c;
-	char arr[a];
 	for (i = c; i >= 0; i--)
 	{
-		arr[j] = s[i];
+		str[j] = s[i];
+		j++;
 	}
-	for (i = 0; i < c; i++)
+	for (j; j < c; j++)
 	{
-		s[c] = arr[c];
+		s[j] = str[j];
 	}
 }
